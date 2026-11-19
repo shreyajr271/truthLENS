@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shreyajr271.github.io/truthLENS/sitemap.xml

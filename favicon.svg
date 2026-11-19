@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield/Rounded Icon -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Forensic Reticle / Target Grid -->
+  <circle cx="28" cy="28" r="18" stroke="url(#cyanGrad)" stroke-width="2.5" stroke-dasharray="2 3" opacity="0.6"/>
+  
+  <!-- Magnifying Lens Ring -->
+  <circle cx="28" cy="28" r="14" stroke="url(#cyanGrad)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Optical Crosshair -->
+  <line x1="28" y1="18" x2="28" y2="22" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="28" y1="34" x2="28" y2="38" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="28" x2="22" y2="28" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="34" y1="28" x2="38" y2="28" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Central Authenticity Target Point -->
+  <circle cx="28" cy="28" r="2.5" fill="#00f2fe"/>
+
+  <!-- Magnifier Handle -->
+  <path d="M38 38 L52 52" stroke="url(#cyanGrad)" stroke-width="4.5" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M43 43 L51 51" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Data Pulse Waves (Forensic Signal) -->
+  <path d="M46 16 Q52 22 52 28" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M50 12 Q58 20 58 28" stroke="#00f2fe" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+</svg>
